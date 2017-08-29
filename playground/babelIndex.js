@@ -4,13 +4,10 @@ var _dist = require('../dist');
 
 var _dist2 = _interopRequireDefault(_dist);
 
-var _objects = require('../dist/objects');
-
-var _objects2 = _interopRequireDefault(_objects);
-
-var _object = require('../dist/objects/object');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import Objects from '../objects';
+// import { valueFromObject } from '../objects/object';
 
 var user = {
   person: {
@@ -25,6 +22,19 @@ var user = {
     *  Then run node babelDemo.js
     */
 
-console.log(_dist2.default.Objects.valueFromObject(user, 'person.name'));
-console.log(_objects2.default.valueFromObject(user, 'person.name'));
-console.log((0, _object.valueFromObject)(user, 'person.name'));
+console.log('valueFromObject', _dist2.default.Objects.valueFromObject(user, 'person.name'));
+
+var users = [user, user];
+
+console.log('Before removeDupilcates:', JSON.stringify(users));
+console.log('After removeDupilcates:', JSON.stringify(_dist2.default.Arrays.removeDupilcates(users)));
+
+var now = new Date();
+
+console.log(_dist2.default.Dates.addYears(2, now));
+console.log(_dist2.default.Dates.addMonths(2, now));
+console.log(_dist2.default.Dates.addDays(2, now));
+console.log(_dist2.default.Dates.addHours(2, now));
+console.log(_dist2.default.Dates.addMinutes(2, now));
+console.log(_dist2.default.Dates.addSeconds(2, now));
+console.log(_dist2.default.Dates.addMilliseconds(2, now));
