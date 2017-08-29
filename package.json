@@ -28,6 +28,7 @@
   "license": "ISC",
   "scripts": {
     "clean": "git clean -fd",
+    "docs": "documentation readme src/index.js -s=API",
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
     "setup": "cp -r dist/* ./",
     "prepublish": "npm run build && npm run setup",

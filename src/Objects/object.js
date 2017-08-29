@@ -1,11 +1,8 @@
 /**
- *  Take in a Object and a string
- *  The Object is what you want to search through
- *  The string is the a list of keys seperated by dots
- *  The function will keep drilling deeper using the dot seperated field names
- *   until it reaches the value.
- *  If no value is found or a invalid field is inputted it will return undefined
- *  If no propertyName is not  or empty then it will return the data
+ * This function search the item using a nexted string path
+ * @param {Object} item The object you want to search in
+ * @param {String} propertyName The path to the value seperated by dots (.).
+ * @return {(Any|undefined)} The found value or nothing
  */
 export function valueFromObject(item, propertyName = '') {
   return propertyName ? propertyName.split('.').reduce((prev, curr) => {

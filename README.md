@@ -42,18 +42,24 @@ const JsHelper              = require('jshelper').default;
 
 ### valueFromObject
 
-Take in a Object and a string
- The Object is what you want to search through
- The string is the a list of keys seperated by dots
- The function will keep drilling deeper using the dot seperated field names
-  until it reaches the value.
- If no value is found or a invalid field is inputted it will return undefined
- If no propertyName is not  or empty then it will return the data
+This function search the item using a nexted string path
 
 **Parameters**
 
--   `item`  
--   `propertyName`   (optional, default `''`)
+-   `item` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** The object you want to search in
+-   `propertyName` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The path to the value seperated by dots (.). (optional, default `''`)
+
+Returns **(Any | [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** The found value or nothing
+
+### removeDupilcates
+
+This function will remove all dupilcates from a array
+
+**Parameters**
+
+-   `array` **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** The array to remove dupilcates from.
+
+Returns **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** The new array
 
 ### isValid
 
@@ -72,3 +78,5 @@ This function return the number of days in a month
 **Parameters**
 
 -   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `newDate()`)
+
+Returns **([number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** The number of days in month or undefined if date is no valid
