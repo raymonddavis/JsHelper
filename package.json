@@ -17,6 +17,14 @@
     "type": "git",
     "url": "https://github.com/raymonddavis/JsHelper"
   },
+  "bugs": "https://github.com/raymonddavis/JsHelper/issues",
+  "keywords": [
+    "javascript",
+    "helpers"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
   "license": "ISC",
   "scripts": {
     "clean": "rm -rf dist/*",
