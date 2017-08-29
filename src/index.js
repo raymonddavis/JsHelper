@@ -8,4 +8,7 @@ const JsHelper = {
   Dates,
 };
 
+/**
+ * JsHelper imports everything
+ */
 export default JsHelper;
