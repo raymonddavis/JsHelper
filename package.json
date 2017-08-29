@@ -1,6 +1,6 @@
 {
   "name": "jshelper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Some helper functions",
   "main": "./dist/index.js",
   "dependencies": {},
