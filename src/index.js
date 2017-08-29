@@ -1,1 +1,1 @@
-export * from './objects/getValueFromObject';
+export * from './objects';

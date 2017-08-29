@@ -4,14 +4,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getValueFromObject = require('./objects/getValueFromObject');
+var _objects = require('./objects');
 
-Object.keys(_getValueFromObject).forEach(function (key) {
+Object.keys(_objects).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {
-      return _getValueFromObject[key];
+      return _objects[key];
     }
   });
 });

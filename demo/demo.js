@@ -1,4 +1,6 @@
-const helper = require('../dist/index');
+const JsHelper = require('../dist/index');
+const ObjectsHelper = require('../dist/objects');
+const { getValueFromObject }= require('../dist/index');
 
 const user = {
   person: {
@@ -9,4 +11,6 @@ const user = {
   location: 'North Dakota',
 };
 
-console.log(helper.getValueFromObject(user));
+console.log(JsHelper.getValueFromObject(user, 'person.name'));
+console.log(ObjectsHelper.getValueFromObject(user, 'person.name'));
+console.log(getValueFromObject(user, 'person.name'));
