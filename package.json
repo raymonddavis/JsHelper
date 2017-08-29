@@ -1,13 +1,13 @@
 {
-  "name": "helper",
+  "name": "jshelper",
   "version": "1.0.0",
   "description": "Some helper functions",
   "main": "./dist/index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1"
   },
-  "devDependencies": {},
   "author": "Ray Davis",
   "license": "ISC",
   "scripts": {
