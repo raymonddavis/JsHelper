@@ -4,9 +4,9 @@
  *  Then run node babelDemo.js
  */
 
-import JsHelper from '../dist';
-import Objects from '../dist/objects';
-import { valueFromObject } from '../dist/objects/object';
+import JsHelper from '../';
+import Objects from '../objects';
+import { valueFromObject } from '../objects/object';
 
 const user = {
   person: {
