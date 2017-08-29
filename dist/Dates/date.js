@@ -3,6 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+/**
+ * This function returns true if date is an instanceof Date
+ * @param {Date} date any object that is an instanceof Date
+ * @return {boolean} if the date is an instanceof Date
+ */
 var isValid = exports.isValid = function isValid(date) {
   if (!(date instanceof Date)) {
     console.error(date + " is not an instanceof Date");
@@ -12,6 +17,11 @@ var isValid = exports.isValid = function isValid(date) {
   return true;
 };
 
+/**
+ * This function return the number of days in a month
+ * @param {Date} date any object that is an instanceof Date
+ * @return {(number|undefined)} The number of days in month or undefined if date is no valid
+ */
 var daysInMonth = exports.daysInMonth = function daysInMonth() {
   var date = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new Date();
 

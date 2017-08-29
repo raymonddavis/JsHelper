@@ -14,7 +14,7 @@ export const isValid = date => {
 
 /**
  * This function return the number of days in a month
- * @param {Date} [date = new Date()] any object that is an instanceof Date
+ * @param {Date} date any object that is an instanceof Date
  * @return {(number|undefined)} The number of days in month or undefined if date is no valid
  */
 export const daysInMonth = (date = new Date()) => {
