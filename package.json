@@ -3,6 +3,9 @@
   "version": "1.0.6",
   "description": "Some helper functions",
   "main": "./dist/index.js",
+  "files": [
+    "./dist"
+  ],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",

@@ -20,7 +20,7 @@ var user = {
   job: 'idk',
   location: 'North Dakota'
 }; /**
-    *  babel index.js --presets babel-preset-es2015 --watch --out-file babelIndex.js
+    *  babel index.js --presets babel-preset-es2015 --out-file babelIndex.js
     *  Run this to complie before demo
     *  Then run node babelDemo.js
     */
