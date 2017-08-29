@@ -1,3 +1,8 @@
+/**
+ * This function returns true if date is an instanceof Date
+ * @param {Date} date any object that is an instanceof Date
+ * @return {boolean} if the date is an instanceof Date
+ */
 export const isValid = date => {
   if (!(date instanceof Date)) {
     console.error(`${date} is not an instanceof Date`);
@@ -7,6 +12,11 @@ export const isValid = date => {
   return true;
 }
 
+/**
+ * This function return the number of days in a month
+ * @param {Date} [date = new Date()] any object that is an instanceof Date
+ * @return {number || undefined} The number of days in month or undefined if date is no valid
+ */
 export const daysInMonth = (date = new Date()) => {
   return isValid(date)
   ? new Date(date.getFullYear(), date.getMonth(), 0).getDate()
