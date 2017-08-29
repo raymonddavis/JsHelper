@@ -1,4 +1,5 @@
 /playground/
 /src/
+/dist/
 .gitignore
 .module-cache
