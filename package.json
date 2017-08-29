@@ -8,7 +8,15 @@
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1"
   },
-  "author": "Ray Davis",
+  "author": {
+    "name": "Ray Davis",
+    "email": "raymond.davis.4th@gmail.com",
+    "url": "https://github.com/raymonddavis"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/raymonddavis/JsHelpers"
+  },
   "license": "ISC",
   "scripts": {
     "clean": "rm -rf dist/*",
