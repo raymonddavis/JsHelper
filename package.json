@@ -1,6 +1,6 @@
 {
   "name": "jshelper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Some helper functions",
   "main": "./dist/index.js",
   "dependencies": {},
@@ -13,9 +13,9 @@
     "email": "raymond.davis.4th@gmail.com",
     "url": "https://github.com/raymonddavis"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/raymonddavis/JsHelpers"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raymonddavis/JsHelpers"
   },
   "license": "ISC",
   "scripts": {
