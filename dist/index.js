@@ -6,12 +6,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _objects = require('./objects');
 
-Object.keys(_objects).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _objects[key];
-    }
-  });
-});
+var _objects2 = _interopRequireDefault(_objects);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var JsHelper = {
+  Objects: _objects2.default
+};
+
+exports.default = JsHelper;

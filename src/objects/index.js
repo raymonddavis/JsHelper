@@ -1,1 +1,3 @@
-export * from './getValueFromObject';
+import * as Objects from './object';
+
+export default Objects;
