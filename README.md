@@ -87,10 +87,156 @@ Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 #### daysInMonth
 
-This function return the number of days in a month
+This function returns the number of days in a month
 
 **Parameters**
 
 -   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
 
 Returns **([number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** The number of days in month or undefined if date is no valid
+
+#### getMonth
+
+This function returns the start and end dates of the month
+
+**Parameters**
+
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A object containing the start and end dates or nothing
+
+#### getWeek
+
+This function returns the start and end dates of the week
+
+**Parameters**
+
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A object containing the start and end dates or nothing
+
+#### getWeekCentered
+
+This function returns the start and end dates of the week centered around the date
+
+**Parameters**
+
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A object containing the start and end dates or nothing
+
+#### getDay
+
+This function returns the start and end dates of the day
+
+**Parameters**
+
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A object containing the start and end dates or nothing
+
+#### addToDate
+
+This function returns a new date with the additions
+
+**Parameters**
+
+-   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
+    -   `$0.years`   (optional, default `0`)
+    -   `$0.months`   (optional, default `0`)
+    -   `$0.days`   (optional, default `0`)
+    -   `$0.hours`   (optional, default `0`)
+    -   `$0.minutes`   (optional, default `0`)
+    -   `$0.seconds`   (optional, default `0`)
+    -   `$0.milliseconds`   (optional, default `0`)
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A Date with the additions or nothing
+
+#### addYears
+
+This function returns a new Date with the added years
+
+**Parameters**
+
+-   `years`   (optional, default `0`)
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A new Date with the addition or nothing
+
+#### addMonths
+
+This function returns a new Date with the added months
+
+**Parameters**
+
+-   `months`   (optional, default `0`)
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A new Date with the addition or nothing
+
+#### addWeeks
+
+This function returns a new Date with the added weeks
+
+**Parameters**
+
+-   `weeks`   (optional, default `0`)
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A new Date with the addition or nothing
+
+#### addDays
+
+This function returns a new Date with the added days
+
+**Parameters**
+
+-   `days`   (optional, default `0`)
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A new Date with the addition or nothing
+
+#### addHours
+
+This function returns a new Date with the added hours
+
+**Parameters**
+
+-   `hours`   (optional, default `0`)
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A new Date with the addition or nothing
+
+#### addMinutes
+
+This function returns a new Date with the added minutes
+
+**Parameters**
+
+-   `minutes`   (optional, default `0`)
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A new Date with the addition or nothing
+
+#### addSeconds
+
+This function returns a new Date with the added seconds
+
+**Parameters**
+
+-   `seconds`   (optional, default `0`)
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A new Date with the addition or nothing
+
+#### addMilliseconds
+
+This function returns a new Date with the added milliseconds
+
+**Parameters**
+
+-   `milliseconds`   (optional, default `0`)
+-   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
+
+Returns **([Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A new Date with the addition or nothing

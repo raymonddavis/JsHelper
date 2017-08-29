@@ -24,4 +24,7 @@ var JsHelper = {
   Dates: _Dates2.default
 };
 
+/**
+ * JsHelper imports everything
+ */
 exports.default = JsHelper;
