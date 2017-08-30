@@ -28,7 +28,7 @@ export const daysInMonth = (date = new Date()) => {
  * @param {Date} date any object that is an instanceof Date
  * @return {(Object|undefined)} A object containing the start and end dates or nothing
  */
-export const getMonth = (date = new Date()) => {
+export const getMonthBounds = (date = new Date()) => {
   return isValid(date)
   ? {
     start: new Date(date.getFullYear(), date.getMonth(), 1, 0, 0, 0, 0),
@@ -42,7 +42,7 @@ export const getMonth = (date = new Date()) => {
  * @param {Date} date any object that is an instanceof Date
  * @return {(Object|undefined)} A object containing the start and end dates or nothing
  */
-export const getWeek = (date = new Date()) => {
+export const getWeekBounds = (date = new Date()) => {
   return isValid(date)
   ? {
     start: new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay(), 0, 0, 0, 0),
@@ -56,7 +56,7 @@ export const getWeek = (date = new Date()) => {
  * @param {Date} date any object that is an instanceof Date
  * @return {(Object|undefined)} A object containing the start and end dates or nothing
  */
-export const getWeekCentered = (date = new Date()) => {
+export const getWeekBoundsCentered = (date = new Date()) => {
   return isValid(date)
   ? {
     start: new Date(date.getFullYear(), date.getMonth(), date.getDate() - 3, 0, 0, 0, 0),
@@ -70,7 +70,7 @@ export const getWeekCentered = (date = new Date()) => {
  * @param {Date} date any object that is an instanceof Date
  * @return {(Object|undefined)} A object containing the start and end dates or nothing
  */
-export const getDay = (date = new Date()) => {
+export const getDayBounds = (date = new Date()) => {
   return isValid(date)
   ? {
     start: new Date(date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0, 0),
