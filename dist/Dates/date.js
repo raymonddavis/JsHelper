@@ -38,7 +38,7 @@ var getMonthBounds = exports.getMonthBounds = function getMonthBounds() {
 
   return isValid(date) ? {
     start: new Date(date.getFullYear(), date.getMonth(), 1, 0, 0, 0, 0),
-    end: new Date(date.getFullYear(), date.getMonth(), daysInMonth(date) - 1, 23, 59, 59, 59)
+    end: new Date(date.getFullYear(), date.getMonth(), daysInMonth(date), 23, 59, 59, 59)
   } : undefined;
 };
 
@@ -52,7 +52,7 @@ var getWeekBounds = exports.getWeekBounds = function getWeekBounds() {
 
   return isValid(date) ? {
     start: new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay(), 0, 0, 0, 0),
-    end: new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 5, 23, 59, 59, 59)
+    end: new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 6, 23, 59, 59, 59)
   } : undefined;
 };
 

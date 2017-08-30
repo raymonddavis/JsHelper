@@ -28,10 +28,10 @@ console.log('After removeDupilcates:', JSON.stringify(_dist2.default.Arrays.remo
 
 var now = new Date();
 
-console.log(_dist2.default.Dates.addYears(2, now));
-console.log(_dist2.default.Dates.addMonths(2, now));
-console.log(_dist2.default.Dates.addDays(2, now));
-console.log(_dist2.default.Dates.addHours(2, now));
-console.log(_dist2.default.Dates.addMinutes(2, now));
-console.log(_dist2.default.Dates.addSeconds(2, now));
-console.log(_dist2.default.Dates.addMilliseconds(2, now));
+var _JsHelper$Dates$getMo = _dist2.default.Dates.getMonthBounds(),
+    start = _JsHelper$Dates$getMo.start,
+    end = _JsHelper$Dates$getMo.end;
+
+var weekDiff = 604800000;
+
+console.log(start.getTime(), end.getTime(), end.getTime() - start.getTime(), end.getTime() - start.getTime() === weekDiff);

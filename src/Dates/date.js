@@ -32,7 +32,7 @@ export const getMonthBounds = (date = new Date()) => {
   return isValid(date)
   ? {
     start: new Date(date.getFullYear(), date.getMonth(), 1, 0, 0, 0, 0),
-    end: new Date(date.getFullYear(), date.getMonth(), daysInMonth(date) - 1, 23, 59, 59, 59),
+    end: new Date(date.getFullYear(), date.getMonth(), daysInMonth(date), 23, 59, 59, 59),
   }
   : undefined;
 }
@@ -46,7 +46,7 @@ export const getWeekBounds = (date = new Date()) => {
   return isValid(date)
   ? {
     start: new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay(), 0, 0, 0, 0),
-    end: new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 5, 23, 59, 59, 59),
+    end: new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 6, 23, 59, 59, 59),
   }
   : undefined;
 }

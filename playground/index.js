@@ -28,10 +28,8 @@ console.log('After removeDupilcates:', JSON.stringify(JsHelper.Arrays.removeDupi
 
 const now = new Date();
 
-console.log(JsHelper.Dates.addYears(2, now));
-console.log(JsHelper.Dates.addMonths(2, now));
-console.log(JsHelper.Dates.addDays(2, now));
-console.log(JsHelper.Dates.addHours(2, now));
-console.log(JsHelper.Dates.addMinutes(2, now));
-console.log(JsHelper.Dates.addSeconds(2, now));
-console.log(JsHelper.Dates.addMilliseconds(2, now));
+const { start, end } = JsHelper.Dates.getMonthBounds();
+
+const weekDiff = 604800000;
+
+console.log(start.getTime(), end.getTime(),  (end.getTime() - start.getTime()), (end.getTime() - start.getTime()) === weekDiff);
