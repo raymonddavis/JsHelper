@@ -141,7 +141,7 @@ This function returns a new date with the additions
 
 **Parameters**
 
--   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)**
+-   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
     -   `$0.years`   (optional, default `0`)
     -   `$0.months`   (optional, default `0`)
     -   `$0.days`   (optional, default `0`)
