@@ -86,6 +86,14 @@ var getDayBounds = exports.getDayBounds = function getDayBounds() {
 
 /**
  * This function returns a new date with the additions
+ * @param {Object} config An object containing the fields and how much to add
+ * @param {number} config.years The number of years to add
+ * @param {number} config.months The number of months to add
+ * @param {number} config.days The number of days to add
+ * @param {number} config.hours The number of hours to add
+ * @param {number} config.minutes The number of minutes to add
+ * @param {number} config.seconds The number of seconds to add
+ * @param {number} config.milliseconds The number of milliseconds to add
  * @param {Date} date any object that is an instanceof Date
  * @return {(Date|undefined)} A Date with the additions or nothing
  */

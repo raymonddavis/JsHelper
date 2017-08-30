@@ -141,14 +141,14 @@ This function returns a new date with the additions
 
 **Parameters**
 
--   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
-    -   `$0.years`   (optional, default `0`)
-    -   `$0.months`   (optional, default `0`)
-    -   `$0.days`   (optional, default `0`)
-    -   `$0.hours`   (optional, default `0`)
-    -   `$0.minutes`   (optional, default `0`)
-    -   `$0.seconds`   (optional, default `0`)
-    -   `$0.milliseconds`   (optional, default `0`)
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** An object containing the fields and how much to add
+    -   `config.years` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** The number of years to add (optional, default `0`)
+    -   `config.months` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** The number of months to add (optional, default `0`)
+    -   `config.days` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** The number of days to add (optional, default `0`)
+    -   `config.hours` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** The number of hours to add (optional, default `0`)
+    -   `config.minutes` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** The number of minutes to add (optional, default `0`)
+    -   `config.seconds` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** The number of seconds to add (optional, default `0`)
+    -   `config.milliseconds` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** The number of milliseconds to add (optional, default `0`)
 -   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** any object that is an instanceof Date (optional, default `new Date()`)
 
 Returns **([Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) \| [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined))** A Date with the additions or nothing
