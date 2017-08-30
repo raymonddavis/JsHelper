@@ -11,7 +11,7 @@ npm install jshelper
 ```javascript
 import JsHelper              = 'jshelper';
 import Objects               = 'jshelper/Objects';
-import { valueFromObject }   = 'jshelper/Objects';
+import { find }   = 'jshelper/Objects';
 
 var data = {
     person: {
@@ -21,9 +21,9 @@ var data = {
     job: 'idk',
 };
 
-const _jsHelper         = JsHelper.Objects.valueFromObject(data, 'person.name');
-const _objects          = Objects.valueFromObject(data, 'person.name');
-const _valueFromObject  = valueFromObject(data, 'person.name');
+const _jsHelper         = JsHelper.Objects.find(data, 'person.name');
+const _objects          = Objects.find(data, 'person.name');
+const _valueFromObject  = find(data, 'person.name');
 
 console.log(`JsHelper Output:           ${_jsHelper}`);
 console.log(`Objects Output:            ${_objects}`);
@@ -141,7 +141,7 @@ This function returns a new date with the additions
 
 **Parameters**
 
--   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
+-   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)**
     -   `$0.years`   (optional, default `0`)
     -   `$0.months`   (optional, default `0`)
     -   `$0.days`   (optional, default `0`)

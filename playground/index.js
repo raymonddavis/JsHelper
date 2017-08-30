@@ -6,9 +6,6 @@
 
 import JsHelper from '../dist';
 
-// import Objects from '../objects';
-// import { valueFromObject } from '../objects/object';
-
 const user = {
   person: {
     name: 'Ray',
@@ -18,7 +15,7 @@ const user = {
   location: 'North Dakota',
 };
 
-console.log('valueFromObject', JsHelper.Objects.valueFromObject(user, 'person.name'));
+console.log('valueFromObject', JsHelper.Objects.find(user, 'person.name'));
 
 const users = [
   user,

@@ -6,9 +6,6 @@ var _dist2 = _interopRequireDefault(_dist);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import Objects from '../objects';
-// import { valueFromObject } from '../objects/object';
-
 var user = {
   person: {
     name: 'Ray',
@@ -22,7 +19,7 @@ var user = {
     *  Then run node babelDemo.js
     */
 
-console.log('valueFromObject', _dist2.default.Objects.valueFromObject(user, 'person.name'));
+console.log('valueFromObject', _dist2.default.Objects.find(user, 'person.name'));
 
 var users = [user, user];
 
