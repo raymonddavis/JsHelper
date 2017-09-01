@@ -8,28 +8,35 @@ import JsHelper from '../dist';
 
 const user = {
   person: {
-    name: 'Ray',
+    name: 'B Ray',
     age: 23
   },
   job: 'idk',
   location: 'North Dakota',
 };
 
-console.log('valueFromObject', JsHelper.Objects.find(user, 'person.name'));
-
 const users = [
   user,
-  user,
+  {
+    person: {
+      name: 'A Steve',
+      age: 24
+    },
+    job: 'Philly Somewhere',
+    location: 'PA',
+  },
 ];
 
-console.log('Before removeDupilcates:', JSON.stringify(users));
-console.log('After removeDupilcates:', JSON.stringify(JsHelper.Arrays.removeDupilcates(users)));
+const over21 = age => {
+  return age >= 21;
+}
 
+const is23 = age => {
+  return age === 23;
+}
 
-const now = new Date();
+const filtered = JsHelper.Arrays.filterObjects(users, over21, 'person.age', { caseSen: 'none' });
 
-const { start, end } = JsHelper.Dates.getMonthBounds();
-
-const weekDiff = 604800000;
-
-console.log(start.getTime(), end.getTime(),  (end.getTime() - start.getTime()), (end.getTime() - start.getTime()) === weekDiff);
+for (let i in filtered) {
+  console.log(`Filterd: ${JSON.stringify(filtered[i])}`);
+}

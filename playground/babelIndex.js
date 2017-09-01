@@ -8,7 +8,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var user = {
   person: {
-    name: 'Ray',
+    name: 'B Ray',
     age: 23
   },
   job: 'idk',
@@ -19,19 +19,25 @@ var user = {
     *  Then run node babelDemo.js
     */
 
-console.log('valueFromObject', _dist2.default.Objects.find(user, 'person.name'));
+var users = [user, {
+  person: {
+    name: 'A Steve',
+    age: 24
+  },
+  job: 'Philly Somewhere',
+  location: 'PA'
+}];
 
-var users = [user, user];
+var over21 = function over21(age) {
+  return age >= 21;
+};
 
-console.log('Before removeDupilcates:', JSON.stringify(users));
-console.log('After removeDupilcates:', JSON.stringify(_dist2.default.Arrays.removeDupilcates(users)));
+var is23 = function is23(age) {
+  return age === 23;
+};
 
-var now = new Date();
+var filtered = _dist2.default.Arrays.filterObjects(users, over21, 'person.age', { caseSen: 'none' });
 
-var _JsHelper$Dates$getMo = _dist2.default.Dates.getMonthBounds(),
-    start = _JsHelper$Dates$getMo.start,
-    end = _JsHelper$Dates$getMo.end;
-
-var weekDiff = 604800000;
-
-console.log(start.getTime(), end.getTime(), end.getTime() - start.getTime(), end.getTime() - start.getTime() === weekDiff);
+for (var i in filtered) {
+  console.log('Filterd: ' + JSON.stringify(filtered[i]));
+}
